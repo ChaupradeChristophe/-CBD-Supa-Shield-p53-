@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CBD Supa Shield p53 - Molecular Protocol</title>
-    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true, theme: 'forest' });
-    </script>
     <style>
+        /* Styles pour une page scientifique sobre et claire */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 900px;
+            color: #223;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f8f9fa;
@@ -21,124 +18,209 @@
         header {
             text-align: center;
             margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #2e7d32;
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, #2e7d32 0%, #0277bd 100%);
+            color: white;
+            border-radius: 8px;
         }
         h1 {
-            color: #2e7d32;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            font-style: italic;
+            margin-top: 0.5rem;
         }
         h2 {
-            color: #d32f2f;
-            border-left: 4px solid #d32f2f;
-            padding-left: 10px;
+            color: #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
         }
         h3 {
             color: #0277bd;
+            margin-top: 1.5rem;
         }
         .card {
             background: white;
             padding: 1.5rem;
-            margin: 1rem 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .mermaid {
-            background: white;
-            padding: 1rem;
-            border-radius: 8px;
             margin: 1.5rem 0;
-            overflow-x: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-left: 5px solid #2e7d32;
         }
         .phase {
             background-color: #e8f5e9;
-            border-left: 4px solid #2e7d32;
+            border-left: 5px solid #2e7d32;
         }
-        .advantage {
+        .mechanism {
             background-color: #e3f2fd;
-            border-left: 4px solid #0277bd;
+            border-left: 5px solid #0277bd;
         }
-        .note {
-            font-style: italic;
-            color: #666;
-            font-size: 0.9em;
+        .outcome {
+            background-color: #ffecb3;
+            border-left: 5px solid #ff8f00;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .symbol {
+            font-weight: bold;
+        }
+        .up {
+            color: #2e7d32; /* Green for increase */
+        }
+        .down {
+            color: #d32f2f; /* Red for decrease */
         }
         footer {
             text-align: center;
-            margin-top: 2rem;
+            margin-top: 3rem;
             padding-top: 1rem;
             border-top: 1px solid #ccc;
             color: #666;
             font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <h1>CBD Supa Shield p53</h1>
-        <p>A Novel Molecular Protocol for Targeted Apoptosis Induction</p>
+        <p class="subtitle">A Novel Molecular Protocol for Targeted Apoptosis Induction</p>
+        <p>Synergistic Combination: Cannabidiol (CBD) & Linalool Nanoparticles (Lin-NPs)</p>
     </header>
 
     <div class="card">
         <h2>Abstract</h2>
-        <p><strong>CBD Supa Shield p53</strong> is a novel therapeutic concept combining cannabidiol (CBD) and linalool nanoparticles (Lin-NPs) to selectively induce apoptosis in dysfunctional cells (e.g., cancer, neurodegenerative cells, Aβ) by restoring the tumor suppressor function of mutated p53.</p>
-        <p class="note">This page describes a non-commercial, open-source molecular protocol for research discussion.</p>
+        <p><strong>CBD Supa Shield p53</strong> is a targeted therapeutic strategy designed to selectively induce apoptosis in dysfunctional cells (e.g., cancer, neurodegenerative cells) by restoring the tumor suppressor function of mutated p53. This is achieved through the synergistic action of cannabidiol (CBD) and linalool-based nanoparticles (Lin-NPs).</p>
+        <p><em>This is an open-source, non-commercial research protocol for scientific discussion.</em></p>
     </div>
 
-    <div class="card">
-        <h2>🎯 Core Mechanism</h2>
-        <p>The <strong>(CBD)x(Lin-NPs)</strong> complex enables targeted BBB (blood-brain barrier penetration). Inside cells, it executes a multi-pronged, synergistic attack:</p>
-    </div>
-
-    <div class="mermaid">
-        graph LR
-        A[Combo CBD/Lin-NPs] --> B[Pénétration BBB]
-        B --> C[Fondation Anti-inflammatoire]
-        B --> D[Stress Pro-Apoptotique]
-        C --> E[Trigger Principal: p53 Supa Shield]
-        D --> E
-        E --> F[Exécution Apoptotique]
-        F --> G[Amplification & Boucles]
-        G -.-> C
-        G -.-> E
-    </div>
-    
-    <div class="card phase">
-        <h3>1. Foundation: Anti-Inflammatory & Antioxidant</h3>
-        <p>CBD's potent antioxidant activity quenches Reactive Oxygen Species (ROS), suppressing the NLRP3 inflammasome and reducing neuroinflammation (↓IL-1β, ↓IL-18). This creates a permissive environment for apoptosis.</p>
-    </div>
-
-    <div class="card phase">
-        <h3>2. Priming: Pro-Apoptotic Stress</h3>
-        <p>The combination inhibits the PI3K/Akt/mTOR pathway, inducing cellular stress (↓ΔΨm, ↑Ca²⁺) and activating the pro-apoptotic transcription factor FOXO3.</p>
-    </div>
-
-    <div class="card phase">
-        <h3>3. The "Supa Shield": p53 Refolding</h3>
-        <p>CBD acts as a <strong>pharmacological chaperone</strong>, binding to and refolding mutant, misfolded p53 into its functional form. This releases sequestered p73 and partners with activated FOXO3.</p>
-    </div>
-
-    <div class="card phase">
-        <h3>4. Execution: Apoptotic Cascade</h3>
-        <p>Functional p53/p73/FOXO3 drives transcription of pro-apoptotic proteins (PUMA, NOXA, BAX), overwhelming cellular defenses (Bcl-2/Mcl-1) and triggering mitochondrial apoptosis (MOMP → Caspase activation).</p>
-    </div>
-
-    <div class="card phase">
-        <h3>5. Amplification: Virtuous Cycle</h3>
-        <p>Secondary pathways (TRAIL, PPARγ activation) create a self-reinforcing loop, reinforcing cell death and anti-inflammatory effects, ensuring robust efficacy.</p>
-    </div>
-
-    <div class="card advantage">
-        <h2>✨ Key Advantages</h2>
+    <div class="card mechanism">
+        <h2>Delivery System: (CBD) x (Lin-NPs)</h2>
         <ul>
-            <li><strong>High Selectivity:</strong> Targets p53-mutant and stressed cells, sparing healthy tissue.</li>
-            <li><strong>Synergistic Formulation:</strong> Linalool NPs enhance delivery; CBD provides both therapeutic and chaperone activity.</li>
-            <li><strong>Virtuous Cascade:</strong> Creates a feedback loop of reduced inflammation and increased apoptosis.</li>
+            <li><strong>Linalool Nanoparticles (Lin-NPs):</strong>
+                <ul>
+                    <li><span class="symbol up">→</span> Enables <strong>BBB Penetration</strong></li>
+                    <li><span class="symbol up">↑</span> Enhances <strong>Bioavailability</strong></li>
+                </ul>
+            </li>
+            <li><strong>Cannabidiol (CBD):</strong> Active Therapeutic Agent
+                <ul>
+                    <li><span class="symbol up">→</span> Achieves <strong>High Therapeutic Concentration</strong> at Disease Sites (e.g., Brain Tumor, <span class="symbol down">↓</span> Aβ Plaques)</li>
+                </ul>
+            </li>
         </ul>
+    </div>
+
+    <div class="card phase">
+        <h2>Phase I: Anti-Inflammatory & Antioxidant Foundation</h2>
+        <h3>CBD Antioxidant Activity</h3>
+        <ul>
+            <li><span class="symbol down">↓</span> <strong>ROS</strong></li>
+            <li><span class="symbol up">↑</span> <strong>FOXO3</strong> (Activates Antioxidant Genes: SOD2, Catalase)</li>
+            <li><span class="symbol down">↓</span> <strong>NLRP3 Inflammasome</strong></li>
+            <li><span class="symbol down">↓</span> <strong>CASPASE-1</strong></li>
+            <li><span class="symbol down">↓</span> <strong>IL-1β</strong></li>
+            <li><span class="symbol down">↓</span> <strong>IL-18</strong></li>
+        </ul>
+        <div class="outcome">
+            <h3>Downstream Outcome:</h3>
+            <p><span class="symbol down">↓</span> <strong>Neuroinflammation</strong><br>
+            <span class="symbol down">↓</span> <strong>Aβ Plaques</strong><br>
+            <strong>Creates Permissive Environment for Apoptosis</strong></p>
+        </div>
+    </div>
+
+    <div class="card phase">
+        <h2>Phase II: Pro-Apoptotic Stress Priming</h2>
+        <h3>CBD x (Lin-NPs) Metabolic Modulation</h3>
+        <ul>
+            <li><span class="symbol down">↓</span> <strong>Mitochondrial Membrane Potential (ΔΨm)</strong></li>
+            <li><span class="symbol down">↓</span> <strong>PI3K / Akt / mTOR Pathway</strong></li>
+            <li><span class="symbol up">↑</span> <strong>FOXO3</strong> (Activates Pro-apoptotic Genes: BIM, PUMA)</li>
+            <li><span class="symbol up">↑</span> <strong>Cytosolic Ca²⁺</strong></li>
+        </ul>
+        <div class="outcome">
+            <h3>Downstream Outcome:</h3>
+            <p><strong>Generates Pro-apoptotic Cellular Stress</strong><br>
+            <strong>Activates → p53 / p73 & FOXO3 Arms</strong></p>
+        </div>
+    </div>
+
+    <div class="card phase">
+        <h2>Phase III: Core Apoptosis Trigger: "CBD Supa Shield p53"</h2>
+        <h3>CBD as "Pharmacological Chaperone"</h3>
+        <ul>
+            <li><span class="symbol up">→</span> Binds mutant p53 (via Cys adducts)</li>
+            <li><span class="symbol up">→</span> Refolds mutant p53 to functional form</li>
+            <li><span class="symbol up">→</span> Releases sequestered p73 / YAP</li>
+            <li><strong>Result:</strong> <span class="symbol up">↑</span> <strong>Functional p53 / p73 / FOXO3</strong> <span class="symbol up">→</span> <span class="symbol up">↑</span> <strong>PUMA/NOXA/BAX</strong></li>
+        </ul>
+        <div class="outcome">
+            <h3>Synergistic Effect:</h3>
+            <p><span class="symbol up">↑</span> Transcription of <strong>PUMA, NOXA, BAX</strong><br>
+            Dual <strong>p53 / FOXO3</strong> Pro-apoptotic Machinery</p>
+        </div>
+    </div>
+
+    <div class="card phase">
+        <h2>Phase IV: Apoptosis Execution</h2>
+        <h3>PUMA / NOXA / BAX Activation</h3>
+        <ul>
+            <li>Inhibit <strong>Bcl-2 / Mcl-1</strong></li>
+            <li><span class="symbol up">→</span> <strong>BAX / BAK Activation</strong> & Oligomerization</li>
+            <li><strong>Mitochondrial Outer Membrane Permeabilization (MOMP)</strong></li>
+            <li><span class="symbol up">↑</span> <strong>Cytochrome c</strong> / <strong>SMAC</strong> Release</li>
+            <li><span class="symbol up">→</span> <strong>Apoptosome Formation</strong></li>
+            <li><span class="symbol up">→</span> <span class="symbol up">↑</span> <strong>CASPASE-9</strong></li>
+            <li><span class="symbol up">→</span> <span class="symbol up">↑</span> <strong>CASPASE-3</strong></li>
+        </ul>
+        <div class="outcome">
+            <h3>Final Outcome:</h3>
+            <p><strong>Systematic Cell Dismantling</strong> <span class="symbol up">↑</span> <strong>APOPTOSIS</strong></p>
+        </div>
+    </div>
+
+    <div class="card phase">
+        <h2>Phase V: Amplification & Synergy Loops</h2>
+        <h3>CBD + Linalool Secondary Pathways</h3>
+        <ul>
+            <li><span class="symbol up">→</span> <strong>TRAIL</strong> <span class="symbol up">→</span> <span class="symbol up">↑</span> <strong>Caspase-8</strong></li>
+            <li><span class="symbol up">→</span> <strong>BID</strong> <span class="symbol up">→</span> Enhances <strong>MOMP</strong></li>
+        </ul>
+        <h3>Feedback Loops</h3>
+        <ul>
+            <li><strong>MOMP</strong> Reinforces Stress Signaling</li>
+            <li><strong>Apoptosis</strong> Stabilizes p53 / p73 via DNA Damage Response</li>
+            <li><span class="symbol up">↑</span> <strong>PPARγ</strong> <span class="symbol up">→</span> Reinforces Anti-inflammatory State</li>
+            <li><span class="symbol up">↑</span> <strong>FOXO3</strong> <span class="symbol up">→</span> Reinforces Pro-apoptotic Signal</li>
+        </ul>
+        <div class="outcome">
+            <h3>Overall Result:</h3>
+            <p><strong>Virtuous Cycle of <span class="symbol down">↓</span> Inflammation / <span class="symbol up">↑</span> APOPTOSIS</strong></p>
+        </div>
     </div>
 
     <footer>
         <p>This is an open-source research concept shared on GitHub. Not for commercial use.</p>
         <p>Content is provided for educational and research purposes only. Always consult a healthcare professional for medical advice.</p>
+        <p>Protocol by [Your Name/Username].</p>
     </footer>
 </body>
 </html>
